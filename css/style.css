@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+  }
+  body {
+    height: 100vh;
+    background: #A770EF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  html {
+    font-size: 20px;
+  }
+
+  .wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  .container {
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+  }
+
+  .button-option {
+    background: #eae3e3;
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 8px;
+    font-size: 12vmin;
+    color: #d21827;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+  }
+
+  #restart {
+    font-size: 1.3em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #ee0a69;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 1.5em auto 0 auto;
+    display: block;
+    transition: all .4s ease-in-out;
+        outline: none;
+ 
+  }
+
+  #restart:hover, #new-game:hover {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    cursor:pointer;
+    background-position: 100% 0;
+    transition: all .6s ease-in-out;
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+  }
+
+  .button-option:hover {
+    background-color:#dec8be;
+  }
+  .popup {
+    background: #DC2424;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A569D, #DC2424); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 12vmin;
+  }
+
+  #new-game {
+    font-size: 0.6em;
+    padding: 0.5em 1em;
+    background-color: #0a0027;
+    color: #ffffff;
+    border-radius: 0.2em;
+    border: none;
+    transition: all .4s ease-in-out;
+        outline: none;
+  }
+
+  #message {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .popup.hide {
+    display: none;
+  }
